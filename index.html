@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Introduction to Python</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#Introduction">Introduction</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Hello_World">Hello World</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Variables">Variables</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Declaring_a_variable">Declaring a variable</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Variable_Scope">Variable Scope</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Global_Variable">Global Variable</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Constants">Constants</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Data_Types">Data Types</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#If_else_statement">If Else statement</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#While_statement">While statement</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Function_Declaration">Function Declaration</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Reference">Reference</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>Python is a versatile and widely-used programming language known for its readability and simplicity. It is a high-level, interpreted language, which means you don't need to worry about low-level details such as memory management. Python's syntax is designed to be clear and concise, making it an excellent choice for beginners and experienced developers alike.</p>
+        </article>
+        <ul>
+          <li>Python Features</li>
+          <li>History of Python</li>
+          <li>Python Community</li>
+          <li>Python Applications</li>
+          <li>Python Versions</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Hello_World">
+        <header>Hello World</header>
+        <article>
+          <p>The classic introductory program in Python is the "Hello, World!"</p>
+          <code>print("Hello, World!")</code>
+        </article>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <article>
+          <p>In Python, a variable is a name that refers to a value. It is a way to store information that can be referenced and manipulated in a program.</p>
+          <p>Variable names must start with a letter (a-z, A-Z) or an underscore (_). The subsequent characters can be letters, numbers, or underscores. Variable names are case-sensitive (e.g., myVar and myvar are different). Avoid using reserved words as variable names (e.g., if, while, class, etc.).</p>
+        </article>
+        <ul>
+          <li>Variable Types</li>
+          <li>Variable Assignment</li>
+          <li>Variable Scope</li>
+          <li>Variable Naming Conventions</li>
+          <li>Variable Best Practices</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Declaring_a_variable">
+        <header>Declaring a variable</header>
+        <article>
+          <p>You can assign a value to a variable using the assignment operator (=). The type of a variable is dynamically determined based on the assigned value.</p>
+          <code># Variable assignment
+my_variable = 42</code>
+        </article>
+      </section>
+      <section class="main-section" id="Variable_Scope">
+        <header>Variable Scope</header>
+        <article>
+          <p>The scope of a variable defines where it can be accessed. Variables defined inside a function have local scope, while variables defined outside functions have global scope.</p>
+          <code>global_variable = 10  # Global scope
+
+def my_function():
+    local_variable = 20  # Local scope</code>
+        </article>
+      </section>
+      <section class="main-section" id="Global_Variable">
+        <header>Global Variable</header>
+        <article>
+          <p>In Python, a global variable is a variable declared outside of any function, and it can be accessed and modified from any part of the code, including both inside and outside functions. Global variables are defined at the top level of the script or module, and they maintain their value throughout the entire program.</p>
+          <code># Global variable
+global_variable = 10
+
+def my_function():
+    # Accessing the global variable inside a function
+    print("Inside the function:", global_variable)
+
+# Calling the function
+my_function()
+
+# Modifying the global variable outside the function
+global_variable = 20
+
+# Accessing the modified global variable
+print("Outside the function:", global_variable)</code>
+        </article>
+      </section>
+      <section class="main-section" id="Constants">
+        <header>Constants</header>
+        <article>
+          <p>In Python, there is no strict concept of constants like in some other programming languages (e.g., C or Java), where you can explicitly declare a variable as a constant, and its value cannot be changed once set.</p>
+          <p>However, it's a common convention in Python to use uppercase names for variables whose values are not intended to be changed during the execution of a program, treating them as if they were constants.</p>
+        </article>
+        <ul>
+          <li>Defining Constants</li>
+          <li>Using Constants</li>
+          <li>Constants Best Practices</li>
+          <li>Constants in Python Libraries</li>
+          <li>Constants in Third-Party Modules</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <article>
+          <p>Python has several built-in data types, and variables can hold values of different types. Common data types include integers (int), floating-point numbers (float), strings (str), booleans (bool), lists, tuples, dictionaries, etc.</p>
+          <code># Variables of different types
+age = 25            # int
+height = 5.9        # float
+name = "John"       # str
+is_student = True    # bool</code>
+        </article>
+        <ul>
+          <li>Numeric Types</li>
+          <li>String Type</li>
+          <li>Boolean Type</li>
+          <li>Sequence Types</li>
+          <li>Mapping Types</li>
+        </ul>
+      </section>
+      <section class="main-section" id="If_else_statement">
+        <header>If Else statement</header>
+        <article>
+          <p>The if-else statement in Python allows you to execute different blocks of code based on whether a specified condition evaluates to True or False.</p>
+          <p>The basic syntax is as follows:</p>
+          <code>
+            if condition:
+                # Code to execute if the condition is True
+            else:
+                # Code to execute if the condition is False
+          </code>
+          <p>Example:</p>
+          <code>
+            x = 10
+
+            if x > 5:
+                print("x is greater than 5")
+            else:
+                print("x is not greater than 5")
+          </code>
+        </article>
+        <ul>
+          <li>If Statement</li>
+          <li>Else Statement</li>
+          <li>Elif Statement</li>
+          <li>Nested If-Else</li>
+          <li>Short If</li>
+        </ul>
+      </section>
+      <section class="main-section" id="While_statement">
+        <header>While statement</header>
+        <article>
+          <p>The while statement in Python is used to create a loop that repeatedly executes a block of code as long as a specified condition is True.</p>
+          <p>The general syntax of a while loop is as follows:</p>
+          <code>
+            while condition:
+                # Code to execute while the condition is True
+          </code>
+          <p>Example:</p>
+          <code>
+            count = 1
+
+            while count <= 5:
+                print(count)
+                count += 1
+          </code>
+          <p>It's crucial to ensure that the loop will eventually exit to prevent an infinite loop. You should include a mechanism inside the loop that will eventually make the condition False.</p>
+        </article>
+        <ul>
+          <li>Basic While Loop</li>
+          <li>While Loop with Else</li>
+          <li>Infinite While Loop</li>
+          <li>While Loop with Break</li>
+          <li>While Loop with Continue</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Function_Declaration">
+        <header>Function Declaration</header>
+        <article>
+          <p>In Python, you can declare a function using the def keyword. The basic syntax for a function declaration is as follows:</p>
+          <code>
+            def function_name(parameters):
+                # Code to execute
+                return result  # Optional return statement
+          </code>
+          <p>Here's a simple example of a function that adds two numbers:</p>
+          <code>
+            def add_numbers(x, y):
+                sum_result = x + y
+                return sum_result
+          </code>
+        </article>
+        <ul>
+          <li>Defining Functions</li>
+          <li>Calling Functions</li>
+          <li>Function Arguments</li>
+          <li>Return Statement</li>
+          <li>Anonymous Functions</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <p>For more information, refer <a href="https://www.python.org/about/gettingstarted/" target="_blank">Python</a>.</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
